@@ -26,8 +26,7 @@ export default function Soluciones() {
             className="mt-9 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
             data-testid="soluciones-page-intro"
           >
-            Cada solución como bloque independiente, con imagen, descripción,
-            beneficios, aplicaciones y botón de contacto.
+            Cada solución industrial es pensada para funcionar, perdurar y responder a cada desafío. La empresa se especializa en la construcción e instalación de sistemas de PIPING para la conducción de fluidos, trabajando con acero inoxidable y acero al carbono para responder a las exigencias de distintos procesos industriales. 
           </p>
         </div>
       </section>

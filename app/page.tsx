@@ -66,12 +66,12 @@ export default function Home() {
               <span className="size-2 bg-[#f1f0f4]" /> Ingeniería industrial /
               Soluciones a medida
             </div>
-            <h2
+            <h1
               className="max-w-4xl font-heading text-5xl font-semibold leading-[0.95] tracking-[-0.06em] text-[#f1f0f4] sm:text-7xl lg:text-[7.4rem]"
               data-testid="hero-title"
             >
               La precisión también se construye.
-            </h2>
+            </h1>
             <p
               className="mt-8 max-w-xl text-base leading-relaxed text-[#e0dfe3] sm:text-lg"
               data-testid="hero-subtitle"
@@ -83,13 +83,13 @@ export default function Home() {
               className="mt-9 flex flex-col gap-3 sm:flex-row"
               data-testid="hero-actions"
             >
-              <div
-                // href="/soluciones"
+              <Link
+                href="/soluciones"
                 className="inline-flex h-12 items-center justify-center gap-3 border border-[#f1f0f4] bg-white px-6 font-mono text-[10px] uppercase tracking-[0.18em] text-[#100f15] transition-colors duration-200 hover:bg-transparent hover:text-[#f1f0f4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4]"
                 data-testid="hero-solutions-link"
               >
                 Ver soluciones <ArrowUpRight size={15} aria-hidden="true" />
-              </div>
+              </Link>
               <Link
                 href="/contacto"
                 className="inline-flex h-12 items-center justify-center gap-3 border border-white/35 px-6 font-mono text-[10px] uppercase tracking-[0.18em] text-[#f1f0f4] transition-colors duration-200 hover:border-[#f1f0f4] hover:bg-[#f1f0f4]/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4]"

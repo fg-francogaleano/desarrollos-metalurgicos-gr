@@ -34,9 +34,7 @@ export default function Nosotros() {
             className="mt-9 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
             data-testid="nosotros-page-intro"
           >
-            La imagen que debe transmitir es la de una empresa sólida,
-            confiable, innovadora, técnicamente especializada y con altos
-            estándares de calidad.
+            Transformamos necesidades industriales en soluciones pensadas para funcionar, perdurar y responder a cada desafío.
           </p>
         </div>
       </section>
@@ -63,17 +61,13 @@ export default function Nosotros() {
             className="mt-7 max-w-xl text-base leading-relaxed text-[#c7c6cb]"
             data-testid="nosotros-history-copy"
           >
-            La empresa se especializa en la construccion e instalación de
-            montaje de líneas de conducción de fluidos utilizando acero
-            inoxidable y acero al carbono PIPING.
+           La empresa se especializa en la construcción e instalación de sistemas de PIPING para la conducción de fluidos, trabajando con acero inoxidable y acero al carbono para responder a las exigencias de distintos procesos industriales.
           </p>
           <p
             className="mt-5 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
             data-testid="nosotros-complementary-copy"
           >
-            Actividad Complementariamente: brinda servicios de soporte en
-            estructuras metálicas (entrepisos y bateas de procesos), ofrecen
-            soluciones integrales en los casos que se necesiten.
+           Acompañando esta especialización, desarrolla soluciones en estructuras metálicas, incluyendo entrepisos y bateas de proceso, integrando los distintos componentes requeridos para brindar soluciones completas en cada proyecto.
           </p>
         </motion.div>
         <div
@@ -180,9 +174,7 @@ export default function Nosotros() {
                 className="mt-3 max-w-2xl text-sm leading-relaxed text-[#c7c6cb]"
                 data-testid="nosotros-certifications-copy"
               >
-                El documento de requerimientos no especifica equipo ni
-                certificaciones. Esta sección queda preparada para futuras
-                ampliaciones.
+                Equipo y certificaciones que respaldan la capacidad técnica y la calidad de cada proyecto industrial.
               </p>
             </div>
           </div>

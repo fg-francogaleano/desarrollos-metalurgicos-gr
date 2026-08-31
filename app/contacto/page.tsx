@@ -46,22 +46,22 @@ export default function Contacto() {
               {
                 icon: Phone,
                 label: "Teléfono",
-                value: "Consultar mediante el formulario",
+                value: "011 9999-9999",
               },
               {
                 icon: Mail,
                 label: "Correo",
-                value: "Consultar mediante el formulario",
+                value: "info@mail.com",
               },
               {
                 icon: MapPin,
                 label: "Dirección",
-                value: "No especificada en el documento",
+                value: "Calle Falsa 123, Ciudad, País",
               },
               {
                 icon: Clock3,
                 label: "Horarios",
-                value: "No especificados en el documento",
+                value: "Lunes a viernes, 9:00 AM - 6:00 PM",
               },
             ].map(({ icon: Icon, label, value }, index) => (
               <div
@@ -91,8 +91,8 @@ export default function Contacto() {
               WhatsApp
             </p>
             <p className="mt-3 text-sm leading-relaxed text-[#c7c6cb]">
-              Enlace opcional contemplado en la especificación. No se
-              proporcionó un número para activar la integración.
+              Para consultas rápidas, también podés enviarnos un mensaje por
+              WhatsApp. Nuestro equipo estará encantado de ayudarte.
             </p>
           </div>
         </aside>
@@ -135,9 +135,7 @@ export default function Contacto() {
               Ubicación a confirmar.
             </h2>
             <p className="mt-4 max-w-lg text-sm leading-relaxed text-[#595676]">
-              El mapa es opcional y la dirección no está especificada en el
-              documento de requerimientos. Esta área queda preparada para
-              incorporarla.
+              El mapa opcional
             </p>
           </div>
           <div
