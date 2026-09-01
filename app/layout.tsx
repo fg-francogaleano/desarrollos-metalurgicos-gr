@@ -21,6 +21,7 @@ const geistMono = Geist_Mono({
 
 const siteUrl = "https://desarrollosmetalurgicosgr.com";
 const logoUrl = `${siteUrl}/logo.png`;
+const faviconUrl = "/logo.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
     images: [logoUrl],
   },
   icons: {
-    icon: logoUrl,
+    icon: faviconUrl,
   },
 };
 
