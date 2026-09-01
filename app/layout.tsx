@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     title: "Desarrollos Metalúrgicos GR",
     description:
       "Especialistas en piping, estructuras metálicas y montajes industriales a medida.",
-    images: [logoUrl],
+    images: [faviconUrl],
   },
   icons: {
     icon: faviconUrl,
