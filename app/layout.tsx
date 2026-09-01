@@ -19,8 +19,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://desarrollosmetalurgicosgr.com";
+const logoUrl = `${siteUrl}/logo.png`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://desarrollosmetalurgicosgr.com"),
+  metadataBase: new URL(siteUrl),
   title: "Desarrollos Metalúrgicos GR",
   description:
     "Especialistas en piping, estructuras metálicas, montajes industriales y soluciones a medida para la industria.",
@@ -37,15 +40,15 @@ export const metadata: Metadata = {
     title: "Desarrollos Metalúrgicos GR",
     description:
       "Soluciones industriales en piping, estructuras metálicas y montajes a medida para proyectos personalizados.",
-    url: "https://desarrollosmetalurgicosgr.com",
+    url: siteUrl,
     siteName: "Desarrollos Metalúrgicos GR",
     locale: "es_AR",
     type: "website",
     images: [
       {
-        url: "/logo.png",
-        width: 512,
-        height: 512,
+        url: logoUrl,
+        width: 1200,
+        height: 1200,
         alt: "Desarrollos Metalúrgicos GR",
       },
     ],
@@ -55,10 +58,10 @@ export const metadata: Metadata = {
     title: "Desarrollos Metalúrgicos GR",
     description:
       "Especialistas en piping, estructuras metálicas y montajes industriales a medida.",
-    images: ["/logo.png"],
+    images: [logoUrl],
   },
   icons: {
-    icon: "/logo.png",
+    icon: logoUrl,
   },
 };
 
@@ -73,7 +76,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <SiteHeader />
           <main className="flex-1">{children}</main>
           <SiteFooter />
-
           <a
             href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
             target="_blank"
