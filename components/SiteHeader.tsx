@@ -20,10 +20,10 @@ export default function SiteHeader() {
 
   return (
     <header
-      className="fixed inset-x-0 top-0 z-50 border-b border-white/15 bg-[#100f15]/85 backdrop-blur-xl"
+      className="fixed inset-x-0 top-0 z-50 border-b border-white/15 bg-[#100f15]/35 backdrop-blur-xl"
       data-testid="site-header"
     >
-      <div className="mx-auto flex h-[76px] max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
+      <div className="mx-auto flex h-19 max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <Link
           href="/"
           className="group flex items-center gap-3 text-[#f1f0f4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4]"

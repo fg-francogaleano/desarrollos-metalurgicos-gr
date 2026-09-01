@@ -113,7 +113,7 @@ export default function Contacto() {
               </h2>
             </div>
             <span className="font-mono text-[10px] text-[#757480]">
-              GR / 04
+              04
             </span>
           </div>
           <ContactForm source="contact" />

@@ -211,12 +211,12 @@ export default function Home() {
               <ArrowUpRight size={15} aria-hidden="true" />
             </Link>
           </div>
-          <div className="mt-14 grid gap-px border border-[#c5c4d4]  md:grid-cols-3">
+          <div className="mt-14 grid gap-px md:grid-cols-3">
             {solutions.map((solution) => (
               <Link
                 href="/soluciones"
                 key={solution.number}
-                className="group bg-[#f1f0f4] p-6 transition-colors duration-200 hover:bg-[#e2e1ea] sm:p-8"
+                className="group bg-[#f1f0f4] border border-[#c5c4d4] p-6 transition-colors duration-200 hover:bg-[#e2e1ea] sm:p-8"
                 data-testid={`home-solution-card-${solution.number}`}
               >
                 <div className="flex items-start justify-between">
