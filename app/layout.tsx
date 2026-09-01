@@ -20,8 +20,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://desarrollosmetalurgicosgr.com"),
   title: "Desarrollos Metalúrgicos GR",
-  description: "Soluciones industriales en piping, estructuras metálicas y montajes a medida.",
+  description:
+    "Especialistas en piping, estructuras metálicas, montajes industriales y soluciones a medida para la industria.",
+  keywords: [
+    "metalúrgica",
+    "piping",
+    "estructuras metálicas",
+    "montajes industriales",
+    "soluciones industriales",
+    "GR",
+  ],
+  authors: [{ name: "Desarrollos Metalúrgicos GR" }],
+  openGraph: {
+    title: "Desarrollos Metalúrgicos GR",
+    description:
+      "Soluciones industriales en piping, estructuras metálicas y montajes a medida para proyectos personalizados.",
+    url: "https://desarrollosmetalurgicosgr.com",
+    siteName: "Desarrollos Metalúrgicos GR",
+    locale: "es_AR",
+    type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Desarrollos Metalúrgicos GR",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Desarrollos Metalúrgicos GR",
+    description:
+      "Especialistas en piping, estructuras metálicas y montajes industriales a medida.",
+    images: ["/logo.png"],
+  },
   icons: {
     icon: "/logo.png",
   },
@@ -45,7 +80,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             rel="noreferrer"
             aria-label="Contactar por WhatsApp"
             title="Contactar por WhatsApp"
-            className="fixed bottom-5 right-5 z-[60] flex h-14 w-14 items-center justify-center rounded-full bg-[#25d366] text-[#0f172a] shadow-[0_12px_30px_rgba(37,211,102,0.45)] transition-transform duration-200 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25d366] focus-visible:ring-offset-2 focus-visible:ring-offset-[#100f15]"
+            className="fixed bottom-5 right-5 z-[60] flex h-10 w-10 items-center justify-center rounded-full bg-[#25d366] text-[#0f172a] shadow-[0_12px_30px_rgba(37,211,102,0.45)] transition-transform duration-200 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25d366] focus-visible:ring-offset-2 focus-visible:ring-offset-[#100f15]"
           >
             <svg
               viewBox="0 0 24 24"
