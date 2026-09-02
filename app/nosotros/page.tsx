@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
-import { ArrowUpRight, Check, ShieldCheck } from "lucide-react";
+import { ArrowUpRight, ShieldCheck } from "lucide-react";
 import { media } from "@/lib/content";
 
 const values = [
@@ -142,16 +142,25 @@ export default function Nosotros() {
             Una forma de trabajar.
           </h2>
         </div>
-        <div className="grid gap-px border border-[#4a4954] bg-[#4a4954] sm:grid-cols-2">
+        <div className="border-y border-[#4a4954]">
           {values.map((value, index) => (
-            <div
+            <motion.div
               key={value}
-              className="flex items-center gap-4 bg-[#1c1b22] p-6"
+              initial={{ opacity: 0, x: 12 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.45, delay: index * 0.07 }}
+              className="group flex items-center gap-5 border-b border-[#4a4954] px-4 py-5 transition-colors duration-300 last:border-b-0 hover:bg-[#1c1b22] sm:px-6 sm:py-6"
               data-testid={`nosotros-value-${index + 1}`}
             >
-              <Check size={16} className="text-[#c5c4d4]" aria-hidden="true" />
-              <span className="text-sm text-[#e0dfe3]">{value}</span>
-            </div>
+              <span className="w-8 font-mono text-[10px] tracking-[0.2em] text-[#6f6b94] transition-colors duration-300 group-hover:text-[#c5c4d4]">
+                0{index + 1}
+              </span>
+              <span className="font-heading text-xl tracking-[-0.03em] text-[#e0dfe3] transition-transform duration-300 group-hover:translate-x-1 sm:text-2xl">
+                {value}
+              </span>
+              <span className="ml-auto h-px w-8 bg-[#6f6b94] transition-[width,background-color] duration-300 group-hover:w-14 group-hover:bg-[#c5c4d4]" />
+            </motion.div>
           ))}
         </div>
       </section>
