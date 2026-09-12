@@ -46,17 +46,17 @@ export default function Contacto() {
               {
                 icon: Phone,
                 label: "Teléfono",
-                value: "011 9999-9999",
+                value: "011 2580-1774",
               },
               {
                 icon: Mail,
                 label: "Correo",
-                value: "info@mail.com",
+                value: "jramirez@grdesarrollosmet.com",
               },
               {
                 icon: MapPin,
                 label: "Dirección",
-                value: "Calle Falsa 123, Ciudad, País",
+                value: "General Rodriguez, Buenos Aires, Argentina",
               },
               {
                 icon: Clock3,
@@ -119,7 +119,7 @@ export default function Contacto() {
           <ContactForm source="contact" />
         </div>
       </section>
-      <section
+      {/* <section
         className="border-t border-[#4a4954] bg-[#f1f0f4] text-[#100f15]"
         data-testid="contacto-map-section"
       >
@@ -147,7 +147,7 @@ export default function Contacto() {
             </span>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
