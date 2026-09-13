@@ -2,8 +2,18 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
-import { ArrowUpRight, ShieldCheck } from "lucide-react";
 import { media } from "@/lib/content";
+import {
+  ShieldCheck,
+  Settings2,
+  CalendarCheck,
+  MessageCircleMore,
+  ArrowUpRight,
+  Headset,
+  Timer,
+  CalendarClock,
+  SlidersVertical,
+} from "lucide-react";
 
 const values = [
   "Sólida",
@@ -28,14 +38,98 @@ export default function Nosotros() {
             className="mt-7 max-w-5xl font-heading text-5xl leading-[0.95] tracking-[-0.06em] sm:text-7xl lg:text-[8rem]"
             data-testid="nosotros-page-title"
           >
-            Soluciones industriales con criterio técnico.
+            Ingeniería, compromiso y respaldo en cada momento.
           </h1>
           <p
             className="mt-9 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
             data-testid="nosotros-page-intro"
           >
-            Transformamos necesidades industriales en soluciones pensadas para funcionar, perdurar y responder a cada desafío.
+            En desarrollo metalúrgicos GR nos consolidamos como un socio
+            estratégico para la industria nacional, especializándonos en la
+            construcción e instalación de líneas de piping, bateas y estructuras
+            de alta complejidad.
           </p>
+          <p
+            className="mt-9 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
+            data-testid="nosotros-page-intro"
+          >
+            Combinamos capacidad técnica equipamiento de precisión y una gestión
+            en planta orientada a responder a las más altas exigencias
+            normativas y operativas de nuestros clientes.
+          </p>
+        </div>
+      </section>
+      <section
+        className="border-y border-[#4a4954] bg-[#f1f0f4] text-[#100f15]"
+        data-testid="nosotros-mission-section"
+      >
+        <div className="mx-auto grid max-w-[1440px] gap-0 px-0 py-0 md:grid-cols-2">
+          {[
+            {
+              title: "NORMAS Y RIGOR TÉCNICO",
+              copy: "Ejecución bajo normas ASME B31.3 y soldaduras calificadas ASME Sección IX. Procedimientos WPS y trazabilidad total de materiales certificados.",
+              icon: ShieldCheck,
+            },
+            {
+              title: "ADAPTABILIDAD",
+              copy: "Capacidad operativa para interpretar, ajustar y ejecutar proyectos complejos en estricta conformidad con las especificaciones de su planta. Industrias Alimenticias, Petroquímicas, Químicas y Laboratorios",
+              icon: SlidersVertical,
+            },
+            {
+              title: "EJECUCIÓN A TIEMPO",
+              copy: "Planificación rigurosa para el cumplimiento estricto de los plazos de entrega y la optimización de tiempos en paradas de planta.",
+              icon: CalendarClock,
+            },
+            {
+              title: "ASESORAMIENTO UNO A UNO",
+              copy: "Atención directa y acompañamiento técnico personalizado desde la revisión inicial del pliego hasta el montaje final.",
+              icon: Headset,
+            },
+          ].map((item, index) => {
+            const Icon = item.icon;
+
+            return (
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                key={item.title}
+                className="
+            border-b border-[#c5c4d4]
+            px-5 py-12
+            sm:px-8 flex justify-center align-center gap-5
+            md:border-r md:px-12 md:py-16
+            md:[&:nth-child(2n)]:border-r-0
+            md:[&:nth-child(n+3)]:border-b-0
+          "
+                data-testid={`nosotros-principle-${item.title.toLowerCase()}`}
+              >
+                <div className="self-center">
+                  <div className="flex items-center justify-between">
+                    <Icon
+                      size={28}
+                      strokeWidth={1.5}
+                      className="text-[#6f6b94]"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <h2 className="mt-14 font-heading text-3xl tracking-[-0.04em]">
+                    {/* <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#6f6b94]">
+                      0{index + 1}
+                    </span> */}
+                    {item.title}
+                  </h2>
+
+                  <p className="mt-5 text-sm leading-relaxed text-[#595676]">
+                    {item.copy}
+                  </p>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </section>
       <section
@@ -61,13 +155,19 @@ export default function Nosotros() {
             className="mt-7 max-w-xl text-base leading-relaxed text-[#c7c6cb]"
             data-testid="nosotros-history-copy"
           >
-           La empresa se especializa en la construcción e instalación de sistemas de PIPING para la conducción de fluidos, trabajando con acero inoxidable y acero al carbono para responder a las exigencias de distintos procesos industriales.
+            La empresa se especializa en la construcción e instalación de
+            sistemas de PIPING para la conducción de fluidos, trabajando con
+            acero inoxidable y acero al carbono para responder a las exigencias
+            de distintos procesos industriales.
           </p>
           <p
             className="mt-5 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
             data-testid="nosotros-complementary-copy"
           >
-           Acompañando esta especialización, desarrolla soluciones en estructuras metálicas, incluyendo entrepisos y bateas de proceso, integrando los distintos componentes requeridos para brindar soluciones completas en cada proyecto.
+            Acompañando esta especialización, desarrolla soluciones en
+            estructuras metálicas, incluyendo entrepisos y bateas de proceso,
+            integrando los distintos componentes requeridos para brindar
+            soluciones completas en cada proyecto.
           </p>
         </motion.div>
         <div
@@ -84,47 +184,6 @@ export default function Nosotros() {
           <span className="absolute bottom-5 left-5 font-mono text-[10px] uppercase tracking-[0.2em] text-[#f1f0f4]">
             Capacidad / Equipo / Precisión
           </span>
-        </div>
-      </section>
-      <section
-        className="border-y border-[#4a4954] bg-[#f1f0f4] text-[#100f15]"
-        data-testid="nosotros-mission-section"
-      >
-        <div className="mx-auto grid max-w-[1440px] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-3 lg:gap-px lg:bg-[#c5c4d4] lg:px-0 lg:py-0">
-          {[
-            {
-              title: "Misión",
-              copy: "Ofrecer soluciones personalizadas para diferentes tipos de industrias.",
-            },
-            {
-              title: "Visión",
-              copy: "Transmitir confianza, experiencia y capacidad técnica.",
-            },
-            {
-              title: "Experiencia",
-              copy: "Sistemas de tuberías, estructuras metálicas industriales, fabricaciones especiales a medida y montajes industriales.",
-            },
-          ].map((item, index) => (
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-              key={item.title}
-              className="border-b border-[#c5c4d4] pb-8 lg:border-0 lg:bg-[#f1f0f4] lg:p-12 lg:pb-16"
-              data-testid={`nosotros-principle-${item.title.toLowerCase()}`}
-            >
-              <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#6f6b94]">
-                0{index + 1}
-              </span>
-              <h2 className="mt-14 font-heading text-3xl tracking-[-0.04em]">
-                {item.title}
-              </h2>
-              <p className="mt-5 text-sm leading-relaxed text-[#595676]">
-                {item.copy}
-              </p>
-            </motion.div>
-          ))}
         </div>
       </section>
       <section
@@ -183,7 +242,8 @@ export default function Nosotros() {
                 className="mt-3 max-w-2xl text-sm leading-relaxed text-[#c7c6cb]"
                 data-testid="nosotros-certifications-copy"
               >
-                Equipo y certificaciones que respaldan la capacidad técnica y la calidad de cada proyecto industrial.
+                Equipo y certificaciones que respaldan la capacidad técnica y la
+                calidad de cada proyecto industrial.
               </p>
             </div>
           </div>

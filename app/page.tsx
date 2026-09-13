@@ -70,14 +70,13 @@ export default function Home() {
               className="max-w-4xl font-heading text-5xl font-semibold leading-[0.95] tracking-[-0.06em] text-[#f1f0f4] sm:text-7xl lg:text-[7.4rem]"
               data-testid="hero-title"
             >
-              La precisión también se construye.
+              Soluciones Precisas para industrias exigentes.
             </h1>
             <p
               className="mt-8 max-w-xl text-base leading-relaxed text-[#e0dfe3] sm:text-lg"
               data-testid="hero-subtitle"
             >
-              Construcción e instalación de montaje de líneas de conducción de
-              fluidos, estructuras metálicas y montajes industriales.
+              Especialistas en sistemas de piping, bateas y montajes industriales. Soluciones en acero inoxidable y carbono, con soldadura especializada y estrictos estándares de calidad.
             </p>
             <div
               className="mt-9 flex flex-col gap-3 sm:flex-row"
