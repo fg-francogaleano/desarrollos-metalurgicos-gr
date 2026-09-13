@@ -137,20 +137,20 @@
 }
 
 /* Estilo para toast success (verde) */
-[data-sonner-toast][data-type="success"] {
+/* [data-sonner-toast][data-type="success"] {
   border-color: rgb(34, 197, 94) !important;
   border-radius: 0 !important;
   background-color: rgba(34, 197, 94, 0.1) !important;
   color: rgb(74, 222, 128) !important;
-}
+} */
 
 /* Estilo para toast error (rojo) */
-[data-sonner-toast][data-type="error"] {
+/* [data-sonner-toast][data-type="error"] {
   border-color: rgb(239, 68, 68) !important;
   border-radius: 0 !important;
   background-color: rgba(239, 68, 68, 0.1) !important;
   color: rgb(248, 113, 113) !important;
-}
+} */
 
 /* Estilo para el botón de cerrar */
 [data-sonner-toast] button {
