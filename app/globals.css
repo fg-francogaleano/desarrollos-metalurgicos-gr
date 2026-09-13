@@ -153,9 +153,9 @@
 } */
 
 /* Estilo para el botón de cerrar */
-[data-sonner-toast] button {
+/* [data-sonner-toast] button {
   color: inherit !important;
-}
+} */
 
 /* Animación de salida */
 [data-sonner-toast][data-disabled="true"] {
