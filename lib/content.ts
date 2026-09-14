@@ -1,8 +1,8 @@
 export const media = {
   desktopVideo:
-    "https://customer-assets-eiarnc6j.emergentagent.net/job_ac69ced2-4dc7-468b-ac37-719024b64a57/artifacts/7aq8q1b0_video-desktop.mp4",
+    "https://res.cloudinary.com/dexm7t5ty/video/upload/v1789346558/Joel%20Ramirez/video-desktop_zivrdq.mp4",
   mobileVideo:
-    "https://customer-assets-eiarnc6j.emergentagent.net/job_ac69ced2-4dc7-468b-ac37-719024b64a57/artifacts/1gwlmcwy_Dise%C3%B1o%20sin%20t%C3%ADtulo%20%287%29.mp4",
+    "https://res.cloudinary.com/dexm7t5ty/video/upload/v1789346516/Joel%20Ramirez/video-movile_cucfxa.mp4",
   piping:
     "https://images.unsplash.com/photo-1513828646384-e4d8ec30d2bb?crop=entropy&cs=srgb&fm=jpg&q=85&ixlib=rb-4.1.0",
   welding:

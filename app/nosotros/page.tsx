@@ -5,9 +5,6 @@ import { motion } from "motion/react";
 import { media } from "@/lib/content";
 import {
   ShieldCheck,
-  Settings2,
-  CalendarCheck,
-  MessageCircleMore,
   ArrowUpRight,
   Headset,
   Timer,
