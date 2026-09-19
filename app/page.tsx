@@ -117,7 +117,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
+      {/* <section
         className="border-b border-[#4a4954] bg-[#1c1b22]"
         data-testid="home-capability-strip"
       >
@@ -139,7 +139,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section
         id="home-about"
