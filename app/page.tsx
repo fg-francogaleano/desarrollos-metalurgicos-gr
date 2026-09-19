@@ -83,11 +83,11 @@ export default function Home() {
               data-testid="hero-actions"
             >
               <Link
-                href="/soluciones"
+                href="/servicios"
                 className="inline-flex h-12 items-center justify-center gap-3 border border-[#f1f0f4] bg-white px-6 font-mono text-[10px] uppercase tracking-[0.18em] text-[#100f15] transition-colors duration-200 hover:bg-transparent hover:text-[#f1f0f4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4]"
                 data-testid="hero-solutions-link"
               >
-                Ver soluciones <ArrowUpRight size={15} aria-hidden="true" />
+                Ver servicios <ArrowUpRight size={15} aria-hidden="true" />
               </Link>
               <Link
                 href="/contacto"
@@ -192,7 +192,7 @@ export default function Home() {
           <div className="flex flex-col justify-between gap-7 md:flex-row md:items-end">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#595676]">
-                02 / Soluciones
+                02 / Servicios
               </p>
               <h2
                 className="mt-5 max-w-2xl font-heading text-4xl leading-none tracking-[-0.05em] sm:text-6xl"
@@ -202,18 +202,18 @@ export default function Home() {
               </h2>
             </div>
             <Link
-              href="/soluciones"
+              href="/servicios"
               className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.18em] text-[#100f15] transition-colors duration-200 hover:text-[#6f6b94]"
               data-testid="home-solutions-link"
             >
-              Ver todas las soluciones{" "}
+              Ver todos los servicios{" "}
               <ArrowUpRight size={15} aria-hidden="true" />
             </Link>
           </div>
           <div className="mt-14 grid gap-px md:grid-cols-3">
             {solutions.map((solution) => (
               <Link
-                href="/soluciones"
+                href="/servicios"
                 key={solution.number}
                 className="group bg-[#f1f0f4] border border-[#c5c4d4] p-6 transition-colors duration-200 hover:bg-[#e2e1ea] sm:p-8"
                 data-testid={`home-solution-card-${solution.number}`}

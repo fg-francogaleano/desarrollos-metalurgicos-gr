@@ -25,7 +25,7 @@ export default function SiteFooter() {
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#a1a0a6]">Explorar</p>
             <div className="mt-5 flex flex-col items-start gap-3">
               <Link className="text-sm text-[#c7c6cb] transition-colors duration-200 hover:text-[#f1f0f4]" href="/nosotros" data-testid="footer-link-nosotros">Nosotros</Link>
-              <Link className="text-sm text-[#c7c6cb] transition-colors duration-200 hover:text-[#f1f0f4]" href="/soluciones" data-testid="footer-link-soluciones">Soluciones</Link>
+              <Link className="text-sm text-[#c7c6cb] transition-colors duration-200 hover:text-[#f1f0f4]" href="/servicios" data-testid="footer-link-servicios">Servicios</Link>
               <Link className="text-sm text-[#c7c6cb] transition-colors duration-200 hover:text-[#f1f0f4]" href="/proyectos" data-testid="footer-link-proyectos">Proyectos</Link>
               <Link className="text-sm text-[#c7c6cb] transition-colors duration-200 hover:text-[#f1f0f4]" href="/contacto" data-testid="footer-link-contacto">Contacto</Link>
             </div>

@@ -7,7 +7,6 @@ import {
   ShieldCheck,
   ArrowUpRight,
   Headset,
-  Timer,
   CalendarClock,
   SlidersVertical,
 } from "lucide-react";

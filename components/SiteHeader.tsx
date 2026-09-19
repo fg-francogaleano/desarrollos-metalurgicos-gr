@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 const navigation = [
   { label: "Inicio", to: "/" },
   { label: "Nosotros", to: "/nosotros" },
-  { label: "Soluciones", to: "/soluciones" },
+  { label: "Servicios", to: "/servicios" },
   { label: "Proyectos", to: "/proyectos" },
   { label: "Contacto", to: "/contacto" },
 ];
