@@ -9,7 +9,7 @@ export default function Proyectos() {
   return (
     <div data-testid="proyectos-page">
       <section
-        className="border-b border-[#4a4954] px-5 pb-20 pt-40 sm:px-8 lg:px-12 lg:pb-28 lg:pt-52"
+        className="px-5 pb-20 pt-40 sm:px-8 lg:px-12 lg:pb-28 lg:pt-52"
         data-testid="proyectos-intro-section"
       >
         <div className="mx-auto max-w-[1440px]">
@@ -20,15 +20,15 @@ export default function Proyectos() {
             className="mt-7 max-w-5xl font-heading text-5xl leading-[0.95] tracking-[-0.06em] sm:text-7xl lg:text-[8rem]"
             data-testid="proyectos-page-title"
           >
-            La técnica se ve en el resultado.
+            Proyectos destacados en planta.
           </h1>
-          <p
+          {/* <p
             className="mt-9 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
             data-testid="proyectos-page-intro"
           >
             Mostrar proyectos realizados, con fotos, descripción, industria y
             tecnologías usadas.
-          </p>
+          </p> */}
         </div>
       </section>
       <section

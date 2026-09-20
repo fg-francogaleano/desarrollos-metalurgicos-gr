@@ -3,14 +3,16 @@ export const media = {
     "https://res.cloudinary.com/dexm7t5ty/video/upload/v1789346558/Joel%20Ramirez/video-desktop_zivrdq.mp4",
   mobileVideo:
     "https://res.cloudinary.com/dexm7t5ty/video/upload/v1789346516/Joel%20Ramirez/video-movile_cucfxa.mp4",
-  piping:
-    "https://images.unsplash.com/photo-1513828646384-e4d8ec30d2bb?crop=entropy&cs=srgb&fm=jpg&q=85&ixlib=rb-4.1.0",
+  // piping:
+  //   "https://images.unsplash.com/photo-1513828646384-e4d8ec30d2bb?crop=entropy&cs=srgb&fm=jpg&q=85&ixlib=rb-4.1.0",
+     piping:
+    "https://res.cloudinary.com/dexm7t5ty/image/upload/v1789850634/Joel%20Ramirez/piping-desktop_yfgusq.png",
   welding:
-    "https://images.unsplash.com/photo-1455165814004-1126a7199f9b?crop=entropy&cs=srgb&fm=jpg&q=85&ixlib=rb-4.1.0",
+    "https://res.cloudinary.com/dexm7t5ty/image/upload/v1789863001/Joel%20Ramirez/bateas_ne7eni.jpg",
   team:
     "https://images.unsplash.com/photo-1742112125635-6f8201c6ee3f?crop=entropy&cs=srgb&fm=jpg&q=85&ixlib=rb-4.1.0",
   industrial:
-    "https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?crop=entropy&cs=srgb&fm=jpg&q=85&ixlib=rb-4.1.0",
+    "https://res.cloudinary.com/dexm7t5ty/image/upload/v1789859783/Joel%20Ramirez/estructura-metalica_i60mef.jpg",
 } as const;
 
 export interface Solution {
@@ -73,17 +75,17 @@ export const projects: Project[] = [
   {
     number: "P / 02",
     title: "Desarrollo de estructuras metálicas industriales",
-    description: "Estructuras metálicas, entrepisos y bateas de procesos que complementan las necesidades de cada instalación.",
+    description: "Estructuras metálicas y entrepisos que complementan las necesidades de cada instalación.",
     industry: "Construcción e industria",
-    technologies: ["Estructuras metálicas", "Fabricaciones especiales"],
+    technologies: ["Fabricaciones especiales"],
     image: media.industrial,
   },
   {
     number: "P / 03",
-    title: "Montajes industriales a medida",
-    description: "Montajes industriales y soluciones integrales para proyectos que requieren capacidad técnica especializada.",
-    industry: "Ingenierías y compañías industriales",
-    technologies: ["Montaje industrial", "Soluciones personalizadas"],
+    title: "Bateas galvanoplastia",
+    description: "Línea galvanoplastia de tanques robustos en acero inoxidable, con revestimientos técnicos.",
+    industry: "Compañías industriales",
+    technologies: ["Soluciones personalizadas"],
     image: media.welding,
   },
 ];
