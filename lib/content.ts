@@ -1,8 +1,8 @@
 export const media = {
   desktopVideo:
-    "https://res.cloudinary.com/dexm7t5ty/video/upload/v1789346558/Joel%20Ramirez/video-desktop_zivrdq.mp4",
+    "https://res.cloudinary.com/dexm7t5ty/video/upload/v1789942725/Joel%20Ramirez/video-desktop_dckzho.mp4",
   mobileVideo:
-    "https://res.cloudinary.com/dexm7t5ty/video/upload/v1789346516/Joel%20Ramirez/video-movile_cucfxa.mp4",
+    "https://res.cloudinary.com/dexm7t5ty/video/upload/v1789942359/Joel%20Ramirez/video-movile_losuu7.mp4",
   // piping:
   //   "https://images.unsplash.com/photo-1513828646384-e4d8ec30d2bb?crop=entropy&cs=srgb&fm=jpg&q=85&ixlib=rb-4.1.0",
      piping:
