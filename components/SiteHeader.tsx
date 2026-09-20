@@ -49,7 +49,7 @@ export default function SiteHeader() {
             <Link
               key={item.to}
               href={item.to}
-              className={`group relative py-2 font-mono text-[10px] uppercase tracking-[0.2em] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4] ${
+              className={`group relative py-2 font-mono text-[12px] uppercase tracking-[0.2em] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4] ${
                 pathname === item.to
                   ? "text-[#f1f0f4]"
                   : "text-[#a1a0a6] hover:text-[#f1f0f4]"
