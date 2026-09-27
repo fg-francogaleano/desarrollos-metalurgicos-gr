@@ -20,13 +20,14 @@ export default function Soluciones() {
             className="mt-7 max-w-4xl font-heading text-5xl leading-[0.95] tracking-[-0.06em] sm:text-7xl lg:text-[7.8rem]"
             data-testid="servicios-page-title"
           >
-            Del diseño al montaje.
+            Capacidad técnica para cada escala industrial.
           </h1>
           <p
             className="mt-9 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
             data-testid="servicios-page-intro"
           >
-            Cada solución industrial es pensada para funcionar, perdurar y responder a cada desafío. La empresa se especializa en la construcción e instalación de sistemas de PIPING para la conducción de fluidos, trabajando con acero inoxidable y acero al carbono para responder a las exigencias de distintos procesos industriales. 
+            Desarrollamos soluciones integrales en ingeniería, fabricación y
+            montaje ejecutadas con estricto criterio normativo.
           </p>
         </div>
       </section>
@@ -78,7 +79,7 @@ export default function Soluciones() {
                 <p className="mt-7 max-w-xl text-base leading-relaxed text-[#c7c6cb]">
                   {solution.description}
                 </p>
-                <div className="mt-9 grid gap-7 sm:grid-cols-2">
+                {/* <div className="mt-9 grid gap-7 sm:grid-cols-2">
                   <div>
                     <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#a1a0a6]">
                       Beneficios
@@ -114,7 +115,7 @@ export default function Soluciones() {
                       ))}
                     </ul>
                   </div>
-                </div>
+                </div> */}
                 <Link
                   href="/contacto"
                   className="mt-10 inline-flex items-center gap-3 self-start border-b border-[#f1f0f4] pb-2 font-mono text-[10px] uppercase tracking-[0.18em] text-[#f1f0f4] transition-colors duration-200 hover:text-[#c5c4d4]"
