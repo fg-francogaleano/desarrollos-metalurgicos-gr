@@ -94,7 +94,7 @@ export default function Home() {
                 className="inline-flex h-12 items-center justify-center gap-3 border border-white/35 px-6 font-mono text-[10px] uppercase tracking-[0.18em] text-[#f1f0f4] transition-colors duration-200 hover:border-[#f1f0f4] hover:bg-[#f1f0f4]/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4]"
                 data-testid="hero-contact-link"
               >
-                Iniciar consulta <MoveUpRight size={15} aria-hidden="true" />
+                Cotizar proyecto <MoveUpRight size={15} aria-hidden="true" />
               </Link>
             </div>
           </motion.div>
