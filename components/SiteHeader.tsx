@@ -62,13 +62,13 @@ export default function SiteHeader() {
           ))}
         </nav>
 
-        <Link
+        {/* <Link
           href="/contacto"
           className="hidden items-center gap-2 border border-[#f1f0f4] px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-[#f1f0f4] transition-colors duration-200 hover:bg-[#f1f0f4] hover:text-[#100f15] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4] lg:flex"
           data-testid="header-contact-cta"
         >
           Iniciar consulta <MoveUpRight size={13} aria-hidden="true" />
-        </Link>
+        </Link> */}
 
         <button
           type="button"
