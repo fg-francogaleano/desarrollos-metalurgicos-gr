@@ -32,7 +32,7 @@ export const solutions: Solution[] = [
       "Construcción e instalación de montaje de líneas de conducción de fluidos utilizando acero inoxidable y acero al carbono PIPING.",
     benefits: ["Experiencia técnica", "Soluciones personalizadas", "Altos estándares de calidad"],
     applications: ["Industria alimenticia", "Industria química", "Industria petrolera"],
-    image: media.piping,
+    image: "https://res.cloudinary.com/dexm7t5ty/image/upload/v1790721159/Joel%20Ramirez/Lineas_de_conducione_de_fluidos_jgyy1i.png",
   },
   {
     number: "02",
@@ -41,7 +41,7 @@ export const solutions: Solution[] = [
       "Servicios de soporte en estructuras metálicas, entrepisos y bateas de procesos, con soluciones integrales en los casos que se necesiten.",
     benefits: ["Soporte integral", "Diseño a medida", "Capacidad industrial"],
     applications: ["Plantas fabriles", "Constructoras", "Ingenierías"],
-    image: media.industrial,
+    image: "https://res.cloudinary.com/dexm7t5ty/image/upload/v1790720402/Joel%20Ramirez/Estructura_metalica-servicio_wza9yx.jpg",
   },
   {
     number: "03",
@@ -50,7 +50,7 @@ export const solutions: Solution[] = [
       "Fabricaciones especiales a medida y montajes industriales para ofrecer soluciones personalizadas a diferentes tipos de industrias.",
     benefits: ["Fabricación a medida", "Montajes industriales", "Soluciones integrales"],
     applications: ["Sector farmacéutico", "Plantas industriales", "Acero inoxidable o acero al carbono"],
-    image: media.welding,
+    image: "https://res.cloudinary.com/dexm7t5ty/image/upload/v1790721158/Joel%20Ramirez/Fabricaciones_y_montajes_especiales-servicios_rpxa4r.png",
   },
 ];
 
