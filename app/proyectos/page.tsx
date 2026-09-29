@@ -7,7 +7,7 @@ import { projects } from "@/lib/content";
 
 export default function Proyectos() {
   return (
-    <div data-testid="proyectos-page">
+    <div data-testid="proyectos-page" className="border border-blue-500">
       <section
         className="px-5 pb-20 pt-40 sm:px-8 lg:px-12 lg:pb-28 lg:pt-52"
         data-testid="proyectos-intro-section"

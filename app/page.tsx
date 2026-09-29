@@ -9,6 +9,7 @@ import {
   MoveUpRight,
   Ruler,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import { media, projects, solutions } from "@/lib/content";
@@ -198,19 +199,10 @@ export default function Home() {
                 montaje ejecutadas con estricto criterio normativo.
               </p>
             </div>
-            {/* <Link
-              href="/servicios"
-              className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.18em] text-[#100f15] transition-colors duration-200 hover:text-[#6f6b94]"
-              data-testid="home-solutions-link"
-            >
-              Ver todos los servicios{" "}
-              <ArrowUpRight size={15} aria-hidden="true" />
-            </Link> */}
           </div>
-          <div className="mt-14 grid gap-px md:grid-cols-3">
+          <div className="mt-14 grid gap-3 md:grid-cols-3">
             {solutions.map((solution) => (
-              <Link
-                href="/servicios"
+              <div
                 key={solution.number}
                 className="group bg-[#f1f0f4] border border-[#c5c4d4] p-6 transition-colors duration-200 hover:bg-[#e2e1ea] sm:p-8"
                 data-testid={`home-solution-card-${solution.number}`}
@@ -225,20 +217,32 @@ export default function Home() {
                     aria-hidden="true"
                   />
                 </div>
-                <h3 className="mt-16 max-w-xs font-heading text-2xl leading-tight tracking-[-0.04em]">
+
+                <div className="relative mt-8 aspect-[16/10] overflow-hidden bg-[#e2e1ea]">
+                  <Image
+                    src={solution.image}
+                    alt={solution.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+
+                <h3 className="mt-6 max-w-xs font-heading text-2xl leading-tight tracking-[-0.04em]">
                   {solution.title}
                 </h3>
+
                 <p className="mt-5 text-sm leading-relaxed text-[#595676]">
                   {solution.description}
                 </p>
-              </Link>
+              </div>
             ))}
           </div>
         </div>
       </section>
       {/* PROYECTOS */}
       <section
-        className="mx-auto max-w-[1440px] gap-12 px-5 py-24 sm:px-8 lg:gap-20 lg:px-12 lg:py-36"
+        className="mx-auto max-w-[1440px] gap-12 px-0 py-24 sm:px-8 lg:gap-20 lg:px-12 lg:py-36 border border-green-800"
         data-testid="home-projects-section"
         id="proyectos"
       >
