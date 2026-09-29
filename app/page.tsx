@@ -242,51 +242,10 @@ export default function Home() {
       </section>
       {/* PROYECTOS */}
       <section
-        className="mx-auto max-w-[1440px] gap-12 px-0 py-24 sm:px-8 lg:gap-20 lg:px-12 lg:py-36 border border-green-800"
+        className="mx-auto max-w-[1440px] gap-12 px-0 py-0 sm:pt-10 sm:px-8 lg:gap-20 lg:px-12 lg:py-0"
         data-testid="home-projects-section"
         id="proyectos"
       >
-        {/* <div
-          className="relative min-h-[430px] overflow-hidden border border-[#4a4954] bg-[#1c1b22]"
-          data-testid="home-projects-image-block"
-        >
-          <img
-            src={media.piping}
-            alt="Sistema industrial de tuberías y válvulas"
-            loading="lazy"
-            className="absolute inset-0 size-full object-cover opacity-75 transition-transform duration-700 hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-[#100f15]/45" />
-          <div className="absolute bottom-6 left-6 font-mono text-[10px] uppercase tracking-[0.2em] text-[#f1f0f4]">
-            P / 01 — Piping industrial
-          </div>
-        </div>
-        <div className="flex flex-col justify-center">
-          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#a1a0a6]">
-            03 / Proyectos destacados
-          </p>
-          <h2
-            className="mt-6 max-w-xl font-heading text-4xl leading-[1.04] tracking-[-0.05em] sm:text-6xl"
-            data-testid="home-projects-title"
-          >
-            Del detalle de una soldadura a la escala de una planta.
-          </h2>
-          <p
-            className="mt-7 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
-            data-testid="home-projects-copy"
-          >
-            Experiencia principal en sistemas de tuberías para transporte de
-            fluidos, desarrollo de estructuras metálicas industriales,
-            fabricaciones especiales a medida y montajes industriales.
-          </p>
-          <Link
-            href="/proyectos"
-            className="mt-9 inline-flex items-center gap-3 self-start border border-[#4a4954] px-5 py-3 font-mono text-[10px] uppercase tracking-[0.18em] text-[#f1f0f4] transition-colors duration-200 hover:bg-[#f1f0f4] hover:text-[#100f15]"
-            data-testid="home-projects-link"
-          >
-            Ver proyectos <ArrowUpRight size={15} aria-hidden="true" />
-          </Link>
-        </div> */}
         <Proyectos />
       </section>
       {/* CONTACTO */}

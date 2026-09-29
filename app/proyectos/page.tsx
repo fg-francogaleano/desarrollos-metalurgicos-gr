@@ -7,9 +7,9 @@ import { projects } from "@/lib/content";
 
 export default function Proyectos() {
   return (
-    <div data-testid="proyectos-page" className="border border-blue-500">
+    <div data-testid="proyectos-page">
       <section
-        className="px-5 pb-20 pt-40 sm:px-8 lg:px-12 lg:pb-28 lg:pt-52"
+        className="px-5 pt-20 sm:px-8 lg:px-0 lg:pb-28 lg:pt-52"
         data-testid="proyectos-intro-section"
       >
         <div className="mx-auto max-w-[1440px]">
@@ -17,25 +17,18 @@ export default function Proyectos() {
             Proyectos destacados / 03
           </p>
           <h1
-            className="mt-7 max-w-5xl font-heading text-5xl leading-[0.95] tracking-[-0.06em] sm:text-7xl lg:text-[8rem]"
+            className="mt-7 max-w-5xl font-heading text-5xl leading-[0.95] tracking-[-0.06em] sm:text-7xl lg:text-8xl"
             data-testid="proyectos-page-title"
           >
             Proyectos destacados en planta.
           </h1>
-          {/* <p
-            className="mt-9 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
-            data-testid="proyectos-page-intro"
-          >
-            Mostrar proyectos realizados, con fotos, descripción, industria y
-            tecnologías usadas.
-          </p> */}
         </div>
       </section>
       <section
-        className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 lg:px-12 lg:py-32"
+        className="mx-auto max-w-[1440px] px-5 py-20 sm:px-8 lg:px-0 lg:py-0"
         data-testid="projects-grid-section"
       >
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="grid gap-10 lg:grid-cols-2">
           {projects.map((project, index) => (
             <motion.article
               initial={{ opacity: 0, y: 20 }}
@@ -43,7 +36,7 @@ export default function Proyectos() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.55, delay: index * 0.06 }}
               key={project.number}
-              className={`${index === 0 ? "md:col-span-2" : ""}`}
+              className={`${index === 0 ? "lg:col-span-2" : ""}`}
               data-testid={`project-card-${project.number.replaceAll(" ", "-").toLowerCase()}`}
             >
               <div
@@ -101,7 +94,7 @@ export default function Proyectos() {
         </div>
       </section>
       <section
-        className="border-t border-[#4a4954] bg-[#1c1b22]"
+        className="border-t border-[#4a4954] bg-[#1c1b22] my-10"
         data-testid="projects-growth-section"
       >
         <div className="mx-auto flex max-w-[1440px] flex-col gap-7 px-5 py-16 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-12">
