@@ -1,22 +1,56 @@
+
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, MoveUpRight, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 const navigation = [
-  { label: "Inicio", to: "/" },
-  { label: "Nosotros", to: "/nosotros" },
-  { label: "Servicios", to: "/servicios" },
-  { label: "Proyectos", to: "/proyectos" },
-  { label: "Contacto", to: "/contacto" },
+  { label: "Inicio", to: "#inicio" },
+  { label: "Nosotros", to: "#nosotros" },
+  { label: "Servicios", to: "#servicios" },
+  { label: "Proyectos", to: "#proyectos" },
+  { label: "Contacto", to: "#contacto" },
 ];
 
 export default function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
+  const [activeSection, setActiveSection] = useState("inicio");
+
+  useEffect(() => {
+    const sectionIds = navigation.map((item) => item.to.replace("#", ""));
+
+    const updateActiveSection = () => {
+      const headerOffset = 20;
+      const scrollPosition = window.scrollY + headerOffset;
+
+      let currentSection = "inicio";
+
+      sectionIds.forEach((id) => {
+        const element = document.getElementById(id);
+
+        if (!element) {
+          return;
+        }
+
+        if (element.offsetTop <= scrollPosition) {
+          currentSection = id;
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
+  }, []);
 
   return (
     <header
@@ -36,7 +70,7 @@ export default function SiteHeader() {
             className="h-9 w-auto rounded-sm object-contain transition-transform duration-200 group-hover:scale-[1.03]"
           />
           <span className="hidden font-heading text-sm font-semibold uppercase tracking-[0.18em] sm:inline">
-            Desarrollos Metalúrgicos
+            GR Desarrollos Metalúrgicos
           </span>
         </Link>
 
@@ -45,21 +79,37 @@ export default function SiteHeader() {
           aria-label="Navegación principal"
           data-testid="desktop-navigation"
         >
-          {navigation.map((item) => (
-            <Link
-              key={item.to}
-              href={item.to}
-              className={`group relative py-2 font-mono text-[12px] uppercase tracking-[0.2em] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4] ${
-                pathname === item.to
-                  ? "text-[#f1f0f4]"
-                  : "text-[#a1a0a6] hover:text-[#f1f0f4]"
-              }`}
-              data-testid={`desktop-nav-link-${item.label.toLowerCase()}`}
-            >
-              {item.label}
-              <span className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-[#f1f0f4] transition-transform duration-200 group-hover:scale-x-100" />
-            </Link>
-          ))}
+          {navigation.map((item) => {
+            const sectionId = item.to.replace("#", "");
+            const isActive = activeSection === sectionId;
+
+            return (
+              <Link
+                key={item.to}
+                href={item.to}
+                onClick={() => {
+                  setActiveSection(sectionId);
+                  setIsOpen(false);
+                }}
+                aria-current={isActive ? "page" : undefined}
+                className={`group relative py-2 font-mono text-[12px] uppercase tracking-[0.2em] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4] ${
+                  isActive
+                    ? "text-[#8466A9]"
+                    : "text-[#a1a0a6] hover:text-[#8466A9]"
+                }`}
+                data-testid={`desktop-nav-link-${item.label.toLowerCase()}`}
+              >
+                {item.label}
+                <span
+                  className={`absolute inset-x-0 bottom-0 h-px origin-left bg-[#8466A9] transition-transform duration-200 ${
+                    isActive
+                      ? "scale-x-100"
+                      : "scale-x-0 group-hover:scale-x-100"
+                  }`}
+                />
+              </Link>
+            );
+          })}
         </nav>
 
         {/* <Link
@@ -78,7 +128,11 @@ export default function SiteHeader() {
           onClick={() => setIsOpen((open) => !open)}
           data-testid="mobile-menu-toggle"
         >
-          {isOpen ? <X size={19} aria-hidden="true" /> : <Menu size={19} aria-hidden="true" />}
+          {isOpen ? (
+            <X size={19} aria-hidden="true" />
+          ) : (
+            <Menu size={19} aria-hidden="true" />
+          )}
         </button>
       </div>
 
@@ -93,20 +147,33 @@ export default function SiteHeader() {
             data-testid="mobile-navigation"
           >
             <div className="flex flex-col">
-              {navigation.map((item, index) => (
-                <Link
-                  key={item.to}
-                  href={item.to}
-                  onClick={() => setIsOpen(false)}
-                  className="flex items-center justify-between border-b border-white/10 py-4 font-heading text-2xl tracking-tight text-[#f1f0f4] transition-colors duration-200 hover:text-[#c5c4d4]"
-                  data-testid={`mobile-nav-link-${item.label.toLowerCase()}`}
-                >
-                  <span>{item.label}</span>
-                  <span className="font-mono text-xs text-[#a1a0a6]">
-                    0{index + 1}
-                  </span>
-                </Link>
-              ))}
+              {navigation.map((item, index) => {
+                const sectionId = item.to.replace("#", "");
+                const isActive = activeSection === sectionId;
+
+                return (
+                  <Link
+                    key={item.to}
+                    href={item.to}
+                    onClick={() => {
+                      setActiveSection(sectionId);
+                      setIsOpen(false);
+                    }}
+                    className={`flex items-center justify-between border-b border-white/10 py-4 font-heading text-2xl tracking-tight transition-colors duration-200 ${
+                      isActive
+                        ? "text-[#f1f0f4]"
+                        : "text-[#f1f0f4] hover:text-[#c5c4d4]"
+                    }`}
+                    aria-current={isActive ? "page" : undefined}
+                    data-testid={`mobile-nav-link-${item.label.toLowerCase()}`}
+                  >
+                    <span>{item.label}</span>
+                    <span className="font-mono text-xs text-[#a1a0a6]">
+                      0{index + 1}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
           </motion.nav>
         )}
