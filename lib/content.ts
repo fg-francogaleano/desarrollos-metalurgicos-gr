@@ -8,9 +8,9 @@ export const media = {
      piping:
     "https://res.cloudinary.com/dexm7t5ty/image/upload/v1789850634/Joel%20Ramirez/piping-desktop_yfgusq.png",
   welding:
-    "https://res.cloudinary.com/dexm7t5ty/image/upload/v1789863001/Joel%20Ramirez/bateas_ne7eni.jpg",
+    "https://res.cloudinary.com/dexm7t5ty/image/upload/v1790553528/Joel%20Ramirez/bateas-industriales_ryjsuw.jpg",
   team:
-    "https://images.unsplash.com/photo-1742112125635-6f8201c6ee3f?crop=entropy&cs=srgb&fm=jpg&q=85&ixlib=rb-4.1.0",
+    "https://res.cloudinary.com/dexm7t5ty/image/upload/v1790643346/Joel%20Ramirez/nosotros_tkgu9q.jpg",
   industrial:
     "https://res.cloudinary.com/dexm7t5ty/image/upload/v1789859783/Joel%20Ramirez/estructura-metalica_i60mef.jpg",
 } as const;
@@ -68,23 +68,23 @@ export const projects: Project[] = [
     number: "P / 01",
     title: "Sistemas de tuberías para transporte de fluidos",
     description: "Soluciones de piping para diferentes tipos de industrias, con foco en precisión, orden y calidad de montaje.",
-    industry: "Plantas fabriles",
-    technologies: ["Acero inoxidable", "Acero al carbono", "PIPING"],
+    industry: "Plantas petroquímicas",
+    technologies: ["Acero inoxidable"],
     image: media.piping,
   },
   {
     number: "P / 02",
     title: "Desarrollo de estructuras metálicas industriales",
     description: "Estructuras metálicas y entrepisos que complementan las necesidades de cada instalación.",
-    industry: "Construcción e industria",
+    industry: "Ampliación industrial",
     technologies: ["Fabricaciones especiales"],
     image: media.industrial,
   },
   {
     number: "P / 03",
-    title: "Bateas galvanoplastia",
-    description: "Línea galvanoplastia de tanques robustos en acero inoxidable, con revestimientos técnicos.",
-    industry: "Compañías industriales",
+    title: "Bateas industriales",
+    description: "Línea de galvanoplastia y fosfatizado industrial.",
+    industry: "Industrial galvanotecnia",
     technologies: ["Soluciones personalizadas"],
     image: media.welding,
   },

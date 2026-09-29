@@ -12,13 +12,17 @@ import {
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import { media, projects, solutions } from "@/lib/content";
+import Nosotros from "./nosotros/page";
+import Proyectos from "./proyectos/page";
 
 export default function Home() {
   return (
     <div className="overflow-hidden" data-testid="home-page">
+      {/* INCIO */}
       <section
         className="relative flex min-h-[720px] items-end bg-[#100f15] pb-16 pt-36 sm:min-h-screen sm:pb-24"
         data-testid="home-hero-section"
+        id="inicio"
       >
         <video
           className="absolute inset-0 hidden size-full object-cover md:block"
@@ -63,20 +67,28 @@ export default function Home() {
               className="mb-7 flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.24em] text-[#c7c6cb]"
               data-testid="hero-eyebrow"
             >
-              <span className="size-2 bg-[#f1f0f4]" /> Ingeniería industrial /
+              <span className="size-1 bg-[#f1f0f4]" /> Ingeniería industrial /
               Soluciones a medida
             </div>
             <h1
-              className="max-w-4xl font-heading text-5xl font-semibold leading-[0.95] tracking-[-0.06em] text-[#f1f0f4] sm:text-7xl lg:text-[7.4rem]"
+              className="max-w-4xl font-heading text-5xl font-semibold leading-[1.1] tracking-[-0.02em] text-[#f1f0f4] sm:text-7xl lg:text-[7.4rem]"
               data-testid="hero-title"
             >
-              Soluciones Precisas para industrias exigentes.
+              SOLUCIONES PRECISAS PARA
+            </h1>
+            <h1
+              className="max-w-4xl bg-gradient-to-b from-[#A88BD4] via-[#8466A9] to-[#5C3E80] bg-clip-text font-heading text-5xl font-bold leading-[1.1] tracking-[-0.02em] text-transparent sm:text-7xl lg:text-[7.4rem]"
+              data-testid="hero-title"
+            >
+              INDUSTRIAS EXIGENTES.
             </h1>
             <p
               className="mt-8 max-w-xl text-base leading-relaxed text-[#e0dfe3] sm:text-lg"
               data-testid="hero-subtitle"
             >
-              Especialistas en sistemas de piping, bateas y montajes industriales. Soluciones en acero inoxidable y carbono, con soldadura especializada y estrictos estándares de calidad.
+              Especialistas en sistemas de piping, bateas y montajes
+              industriales. Soluciones en acero inoxidable y carbono, con
+              soldadura especializada y estrictos estándares de calidad.
             </p>
             <div
               className="mt-9 flex flex-col gap-3 sm:flex-row"
@@ -116,37 +128,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* <section
-        className="border-b border-[#4a4954] bg-[#1c1b22]"
-        data-testid="home-capability-strip"
-      >
-        <div className="mx-auto grid max-w-[1440px] divide-y divide-[#4a4954] sm:grid-cols-3 sm:divide-x sm:divide-y-0">
-          {[
-            { label: "PIPING", icon: Gauge },
-            { label: "ESTRUCTURAS METÁLICAS", icon: Ruler },
-            { label: "MONTAJES INDUSTRIALES", icon: Crosshair },
-          ].map(({ label, icon: Icon }, index) => (
-            <div
-              className="flex items-center gap-4 px-5 py-6 sm:px-8 lg:px-12"
-              key={label}
-              data-testid={`capability-strip-item-${index + 1}`}
-            >
-              <Icon size={18} className="text-[#c5c4d4]" aria-hidden="true" />
-              <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#e0dfe3]">
-                {label}
-              </span>
-            </div>
-          ))}
-        </div>
-      </section> */}
-
+      {/* NOSOTROS */}
       <section
-        id="home-about"
-        className="mx-auto grid max-w-[1440px] gap-12 px-5 py-24 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-12 lg:py-36"
+        id="nosotros"
+        className="mx-auto max-w-[1440px] gap-12"
         data-testid="home-about-section"
       >
-        <div>
+        {/* <div>
           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#a1a0a6]">
             01 / Nosotros
           </p>
@@ -181,12 +169,14 @@ export default function Home() {
           >
             Conocer la empresa <ArrowUpRight size={15} aria-hidden="true" />
           </Link>
-        </motion.div>
+        </motion.div> */}
+        <Nosotros />
       </section>
-
+      {/* SERVICIOS */}
       <section
         className="border-y border-[#4a4954] bg-[#f1f0f4] text-[#100f15]"
         data-testid="home-solutions-section"
+        id="servicios"
       >
         <div className="mx-auto max-w-[1440px] px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
           <div className="flex flex-col justify-between gap-7 md:flex-row md:items-end">
@@ -200,15 +190,22 @@ export default function Home() {
               >
                 Capacidad técnica para cada escala.
               </h2>
+              <p
+                className="mt-9 max-w-xl text-base leading-relaxed text-[#535357]"
+                data-testid="servicios-page-intro"
+              >
+                Desarrollamos soluciones integrales en ingeniería, fabricación y
+                montaje ejecutadas con estricto criterio normativo.
+              </p>
             </div>
-            <Link
+            {/* <Link
               href="/servicios"
               className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.18em] text-[#100f15] transition-colors duration-200 hover:text-[#6f6b94]"
               data-testid="home-solutions-link"
             >
               Ver todos los servicios{" "}
               <ArrowUpRight size={15} aria-hidden="true" />
-            </Link>
+            </Link> */}
           </div>
           <div className="mt-14 grid gap-px md:grid-cols-3">
             {solutions.map((solution) => (
@@ -239,12 +236,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      {/* PROYECTOS */}
       <section
-        className="mx-auto grid max-w-[1440px] gap-12 px-5 py-24 sm:px-8 lg:grid-cols-[1fr_1.2fr] lg:gap-20 lg:px-12 lg:py-36"
+        className="mx-auto max-w-[1440px] gap-12 px-5 py-24 sm:px-8 lg:gap-20 lg:px-12 lg:py-36"
         data-testid="home-projects-section"
+        id="proyectos"
       >
-        <div
+        {/* <div
           className="relative min-h-[430px] overflow-hidden border border-[#4a4954] bg-[#1c1b22]"
           data-testid="home-projects-image-block"
         >
@@ -284,12 +282,14 @@ export default function Home() {
           >
             Ver proyectos <ArrowUpRight size={15} aria-hidden="true" />
           </Link>
-        </div>
+        </div> */}
+        <Proyectos />
       </section>
-
+      {/* CONTACTO */}
       <section
         className="border-t border-[#4a4954] bg-[#1c1b22]"
         data-testid="home-contact-section"
+        id="contacto"
       >
         <div className="mx-auto grid max-w-[1440px] gap-12 px-5 py-24 sm:px-8 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20 lg:px-12 lg:py-32">
           <div>
