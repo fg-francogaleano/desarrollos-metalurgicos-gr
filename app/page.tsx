@@ -96,14 +96,14 @@ export default function Home() {
               data-testid="hero-actions"
             >
               <Link
-                href="/servicios"
+                href="#servicios"
                 className="inline-flex h-12 items-center justify-center gap-3 border border-[#f1f0f4] bg-white px-6 font-mono text-[10px] uppercase tracking-[0.18em] text-[#100f15] transition-colors duration-200 hover:bg-transparent hover:text-[#f1f0f4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4]"
                 data-testid="hero-solutions-link"
               >
                 Ver servicios <ArrowUpRight size={15} aria-hidden="true" />
               </Link>
               <Link
-                href="/contacto"
+                href="#contacto"
                 className="inline-flex h-12 items-center justify-center gap-3 border border-white/35 px-6 font-mono text-[10px] uppercase tracking-[0.18em] text-[#f1f0f4] transition-colors duration-200 hover:border-[#f1f0f4] hover:bg-[#f1f0f4]/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4]"
                 data-testid="hero-contact-link"
               >
@@ -115,10 +115,7 @@ export default function Home() {
             className="mt-20 flex items-center justify-between border-t border-white/20 pt-5 font-mono text-[9px] uppercase tracking-[0.18em] text-[#a1a0a6] sm:mt-28"
             data-testid="hero-meta-row"
           >
-            <span>Desarrollos Metalúrgicos GR</span>
-            <span className="hidden sm:inline">
-              Acero inoxidable / Acero al carbono
-            </span>
+            <span>GR Desarrollos Metalúrgicos</span>
             <a
               href="#home-about"
               className="flex items-center gap-2 text-[#f1f0f4] transition-colors duration-200 hover:text-[#c5c4d4]"
@@ -135,42 +132,6 @@ export default function Home() {
         className="mx-auto max-w-[1440px] gap-12"
         data-testid="home-about-section"
       >
-        {/* <div>
-          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#a1a0a6]">
-            01 / Nosotros
-          </p>
-          <div className="mt-8 h-px w-20 bg-[#f1f0f4]" />
-        </div>
-        <motion.div
-          initial={{ opacity: 0, y: 18 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.65 }}
-        >
-          <h2
-            className="max-w-4xl font-heading text-4xl leading-[1.04] tracking-[-0.05em] text-[#f1f0f4] sm:text-6xl"
-            data-testid="home-about-title"
-          >
-            Una empresa sólida, confiable, innovadora y técnicamente
-            especializada.
-          </h2>
-          <p
-            className="mt-8 max-w-2xl text-base leading-relaxed text-[#a1a0a6]"
-            data-testid="home-about-copy"
-          >
-            Desarrollos Metalúrgicos GR se especializa en la construcción e
-            instalación de montaje de líneas de conducción de fluidos utilizando
-            acero inoxidable y acero al carbono PIPING. Ofrecemos soluciones
-            personalizadas para diferentes tipos de industrias.
-          </p>
-          <Link
-            href="/nosotros"
-            className="mt-9 inline-flex items-center gap-3 border-b border-[#f1f0f4] pb-2 font-mono text-[10px] uppercase tracking-[0.18em] text-[#f1f0f4] transition-colors duration-200 hover:text-[#c5c4d4]"
-            data-testid="home-about-link"
-          >
-            Conocer la empresa <ArrowUpRight size={15} aria-hidden="true" />
-          </Link>
-        </motion.div> */}
         <Nosotros />
       </section>
       {/* SERVICIOS */}
