@@ -1,5 +1,8 @@
 import { ArrowUpRight, Clock3, Mail, MapPin, Phone } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
+import LinkedInIcon from "@/components/LinkedInIcon";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
+import { linkedInUrl, whatsappUrl } from "@/lib/contact-links";
 
 export default function Contacto() {
   return (
@@ -83,17 +86,32 @@ export default function Contacto() {
               </div>
             ))}
           </div>
-          <div
-            className="mt-10 border border-[#4a4954] bg-[#1c1b22] p-5"
-            data-testid="contacto-whatsapp-note"
-          >
+          <div className="mt-10 border-t border-[#4a4954] pt-7" data-testid="contacto-social-links">
             <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#a1a0a6]">
-              WhatsApp
+              Redes Sociales
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-[#c7c6cb]">
-              Para consultas rápidas, también podés enviarnos un mensaje por
-              WhatsApp. Nuestro equipo estará encantado de ayudarte.
-            </p>
+            <div className="mt-5 flex items-center gap-5">
+              <a
+                href={linkedInUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Perfil de LinkedIn de J. Ramírez"
+                title="LinkedIn"
+                className="inline-flex text-[#8466A9] transition-colors duration-200 hover:text-[#a88bd4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4]"
+              >
+                <LinkedInIcon size={20} />
+              </a>
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Contactar por WhatsApp"
+                title="WhatsApp"
+                className="inline-flex text-[#8466A9] transition-colors duration-200 hover:text-[#a88bd4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f1f0f4]"
+              >
+                <WhatsAppIcon size={20} />
+              </a>
+            </div>
           </div>
         </aside>
         <div

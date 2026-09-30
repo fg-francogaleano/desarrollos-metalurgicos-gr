@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import LinkedInIcon from "@/components/LinkedInIcon";
 
 export default function SiteFooter() {
   return (
@@ -14,7 +15,7 @@ export default function SiteFooter() {
                 className="h-10 w-auto object-contain"
               />
               <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#a1a0a6]">
-                Desarrollos Metalúrgicos
+                GR Desarrollos Metalúrgicos
               </p>
             </div>
             <p className="mt-5 max-w-sm font-heading text-3xl leading-tight text-[#f1f0f4] sm:text-4xl">
