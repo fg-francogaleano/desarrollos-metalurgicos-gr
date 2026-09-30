@@ -54,7 +54,9 @@ export default function SiteHeader() {
 
   return (
     <header
-      className="fixed inset-x-0 top-0 z-50 border-b border-white/15 bg-[#100f15]/35 backdrop-blur-xl"
+      className={`fixed inset-x-0 top-0 z-50 border-b border-white/15 backdrop-blur-xl transition-colors duration-500 ${
+        activeSection === "inicio" ? "bg-[#100f15]/35" : "bg-[#100f15]"
+      }`}
       data-testid="site-header"
     >
       <div className="mx-auto flex h-19 max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
