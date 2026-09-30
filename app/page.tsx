@@ -118,7 +118,7 @@ export default function Home() {
           >
             <span>GR Desarrollos Metalúrgicos</span>
             <a
-              href="#home-about"
+              href="#nosotros"
               className="flex items-center gap-2 text-[#f1f0f4] transition-colors duration-200 hover:text-[#c5c4d4]"
               data-testid="hero-scroll-link"
             >
