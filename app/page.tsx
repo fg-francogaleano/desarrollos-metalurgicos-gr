@@ -15,6 +15,7 @@ import ContactForm from "@/components/ContactForm";
 import { media, projects, solutions } from "@/lib/content";
 import Nosotros from "./nosotros/page";
 import Proyectos from "./proyectos/page";
+import Contacto from "./contacto/page";
 
 export default function Home() {
   return (
@@ -64,13 +65,13 @@ export default function Home() {
             transition={{ duration: 0.75, ease: "easeOut" }}
             className="max-w-4xl"
           >
-            <div
+            {/* <div
               className="mb-7 flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.24em] text-[#c7c6cb]"
               data-testid="hero-eyebrow"
             >
               <span className="size-1 bg-[#f1f0f4]" /> Ingeniería industrial /
               Soluciones a medida
-            </div>
+            </div> */}
             <h1
               className="max-w-4xl font-heading text-5xl font-semibold leading-[1.1] tracking-[-0.02em] text-[#f1f0f4] sm:text-7xl lg:text-[7.4rem]"
               data-testid="hero-title"
@@ -215,7 +216,7 @@ export default function Home() {
         data-testid="home-contact-section"
         id="contacto"
       >
-        <div className="mx-auto grid max-w-[1440px] gap-12 px-5 py-24 sm:px-8 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20 lg:px-12 lg:py-32">
+        {/* <div className="mx-auto grid max-w-[1440px] gap-12 px-5 py-24 sm:px-8 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20 lg:px-12 lg:py-32">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#a1a0a6]">
               04 / Contacto
@@ -240,7 +241,8 @@ export default function Home() {
           >
             <ContactForm source="home" compact />
           </div>
-        </div>
+        </div> */}
+        <Contacto />
       </section>
     </div>
   );

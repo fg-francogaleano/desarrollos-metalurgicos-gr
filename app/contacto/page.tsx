@@ -13,7 +13,7 @@ export default function Contacto() {
             Contacto / 04
           </p>
           <h1
-            className="mt-7 max-w-5xl font-heading text-5xl leading-[0.95] tracking-[-0.06em] sm:text-7xl lg:text-[8rem]"
+            className="mt-7 max-w-5xl font-heading text-5xl leading-[0.95] tracking-[-0.06em] sm:text-7xl lg:text-8xl"
             data-testid="contacto-page-title"
           >
             Hablemos de soluciones.
@@ -71,7 +71,7 @@ export default function Contacto() {
               >
                 <Icon
                   size={17}
-                  className="mt-0.5 text-[#c5c4d4]"
+                  className="mt-0.5 text-[#8466A9]"
                   aria-hidden="true"
                 />
                 <div>
