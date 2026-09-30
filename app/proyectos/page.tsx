@@ -108,7 +108,7 @@ export default function Proyectos() {
             </p>
           </div>
           <Link
-            href="/contacto"
+            href="#contacto"
             className="inline-flex items-center gap-2 self-start border border-[#f1f0f4] px-5 py-3 font-mono text-[10px] uppercase tracking-[0.18em] text-[#f1f0f4] transition-colors duration-200 hover:bg-[#f1f0f4] hover:text-[#100f15]"
             data-testid="projects-contact-link"
           >
