@@ -4,10 +4,18 @@ import { motion } from "motion/react";
 import {
   ArrowDown,
   ArrowUpRight,
+  Beer,
   Crosshair,
+  Factory,
+  FlaskConical,
+  Fuel,
   Gauge,
   MoveUpRight,
   Ruler,
+  Snowflake,
+  Utensils,
+  UtensilsCrossed,
+  Waves,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,6 +24,16 @@ import { media, projects, solutions } from "@/lib/content";
 import Nosotros from "./nosotros/page";
 import Proyectos from "./proyectos/page";
 import Contacto from "./contacto/page";
+
+const industries = [
+  { name: "Industria Química", icon: FlaskConical },
+  { name: "Industria Alimenticia", icon: UtensilsCrossed },
+  { name: "Oil & Gas", icon: Fuel },
+  // { name: "Industria Petroquímica", icon: Factory },
+  { name: "Tratamiento de Aguas y Efluentes", icon: Waves },
+  { name: "Frigoríficos", icon: Snowflake },
+  { name: "Cervecería y Maltería", icon: Beer },
+];
 
 export default function Home() {
   return (
@@ -200,6 +218,54 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <div
+            id="industrias"
+            className="mt-20 flex scroll-mt-24 flex-col justify-between gap-7 border-t border-[#c5c4d4] pt-10 md:mt-35 md:flex-row md:items-end"
+          >
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#595676]">
+                Industrias
+              </p>
+              <h2
+                className="mt-5 max-w-2xl font-heading text-4xl leading-none tracking-[-0.05em] sm:text-6xl"
+                data-testid="home-solutions-title"
+              >
+                Industrias que confian en nuestras soluciones.
+              </h2>
+              <p
+                className="mt-9 max-w-xl text-base leading-relaxed text-[#535357]"
+                data-testid="servicios-page-intro"
+              >
+                Nuestras soluciones se adaptan a las necesidades de diferentes sectores, brindando un servicio integral y especializado.
+              </p>
+            </div>
+          </div>
+          <ul
+            aria-label="Industrias"
+            className="mt-12 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-8 md:grid-cols-4 md:gap-x-6 xl:grid-cols-7 xl:gap-x-5"
+            data-testid="industries-list"
+          >
+            {industries.map(({ name, icon: Icon }, index) => (
+              <li
+                key={name}
+                className={`flex min-w-0 flex-col items-center text-center ${
+                  index === 4 ? "md:col-start-2 xl:col-start-auto" : ""
+                } ${index === 6 ? "max-md:col-span-2 max-md:mx-auto max-md:w-1/2" : ""}`}
+              >
+                <span className="group grid size-16 place-items-center rounded-full border border-[#8466A9] text-[#8466A9] transition-colors duration-300">
+                  <Icon
+                    size={23}
+                    strokeWidth={1.5}
+                    className="transition-transform duration-200 group-hover:-translate-y-0.5"
+                    aria-hidden="true"
+                  />
+                </span>
+                <h5 className="mt-4 w-full max-w-[12rem] text-sm leading-snug text-[#3f3f45] font-semibold">
+                  {name}
+                </h5>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
       {/* PROYECTOS */}

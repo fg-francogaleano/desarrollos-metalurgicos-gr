@@ -77,7 +77,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             rel="noreferrer"
             aria-label="Contactar por WhatsApp"
             title="Contactar por WhatsApp"
-            className="fixed bottom-10 right-10 z-[60] flex items-center justify-center text-[#8466A9] transition-transform duration-300 hover:scale-105 hover:text-[#a48bc2]"
+            className="fixed bottom-18 right-5 md:bottom-10 z-[60] flex items-center justify-center text-[#8466A9] transition-transform duration-300 hover:scale-105 hover:text-[#a48bc2]"
           >
             <WhatsAppIcon />
           </a>
