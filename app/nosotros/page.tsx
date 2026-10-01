@@ -28,7 +28,7 @@ export default function Nosotros() {
       >
         <div className="mx-auto max-w-[1440px]">
           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#a1a0a6]">
-            Nosotros / 01
+            01 / Nosotros
           </p>
           <h2
             className="mt-7 max-w-5xl font-heading text-4xl leading-[1.1] tracking-[-0.06em] sm:text-7xl lg:text-6xl xl:text-7xl"
@@ -95,7 +95,7 @@ export default function Nosotros() {
                   <div>
                     <Icon
                       size={28}
-                      strokeWidth={2}
+                      strokeWidth={1.5}
                       className="text-[#8466A9] transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>

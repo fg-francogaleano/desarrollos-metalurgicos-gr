@@ -236,7 +236,7 @@ export default function Home() {
                 className="mt-9 max-w-xl text-base leading-relaxed text-[#535357]"
                 data-testid="servicios-page-intro"
               >
-                Nuestras soluciones se adaptan a las necesidades de diferentes sectores, brindando un servicio integral y especializado.
+                Trabajamos junto a diferentes sectores, adaptando nuestros servicios a sus necesidades específicas.
               </p>
             </div>
           </div>

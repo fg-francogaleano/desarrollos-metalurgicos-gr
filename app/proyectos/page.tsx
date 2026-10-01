@@ -14,7 +14,7 @@ export default function Proyectos() {
       >
         <div className="mx-auto max-w-[1440px]">
           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#a1a0a6]">
-            Proyectos destacados / 03
+            03 / Proyectos 
           </p>
           <h1
             className="mt-7 max-w-5xl font-heading text-5xl leading-[0.95] tracking-[-0.06em] sm:text-7xl lg:text-8xl"
