@@ -227,7 +227,7 @@ export default function Nosotros() {
           </p>
         </motion.div>
         <div
-          className="relative min-h-[380px] overflow-hidden border border-[#4a4954]"
+          className="relative min-h-[580px] lg:min-h-[380px] overflow-hidden border border-[#4a4954]"
           data-testid="nosotros-image-panel"
         >
           <img
