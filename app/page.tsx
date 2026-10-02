@@ -155,24 +155,24 @@ export default function Home() {
       </section>
       {/* SERVICIOS */}
       <section
-        className="border-y border-[#4a4954] bg-[#f1f0f4] text-[#100f15]"
+        className="border-y border-[#4a4954] bg-[#1c1b22] text-[#100f15]"
         data-testid="home-solutions-section"
         id="servicios"
       >
         <div className="mx-auto max-w-[1440px] px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
           <div className="flex flex-col justify-between gap-7 md:flex-row md:items-end">
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#595676]">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#a1a0a6]">
                 02 / Servicios
               </p>
               <h2
-                className="mt-5 max-w-2xl font-heading text-4xl leading-none tracking-[-0.05em] sm:text-6xl"
+                className="mt-5 max-w-2xl font-heading text-4xl text-[#F1F0F4] leading-none tracking-[-0.05em] sm:text-6xl"
                 data-testid="home-solutions-title"
               >
                 Capacidad técnica para cada escala.
               </h2>
               <p
-                className="mt-9 max-w-xl text-base leading-relaxed text-[#535357]"
+                className="mt-9 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
                 data-testid="servicios-page-intro"
               >
                 Desarrollamos soluciones integrales en ingeniería, fabricación y
@@ -184,16 +184,16 @@ export default function Home() {
             {solutions.map((solution) => (
               <div
                 key={solution.number}
-                className="group bg-[#f1f0f4] border border-[#c5c4d4] p-6 transition-colors duration-200 hover:bg-[#e2e1ea] sm:p-8"
+                className="group border border-[#4a4954] p-6 transition-colors duration-200 hover:border-[#8466A9] sm:p-8"
                 data-testid={`home-solution-card-${solution.number}`}
               >
                 <div className="flex items-start justify-between">
-                  <span className="font-mono text-[10px] text-[#6f6b94]">
+                  <span className="font-mono text-[10px] text-[#a1a0a6]">
                     {solution.number}
                   </span>
                   <ArrowUpRight
                     size={17}
-                    className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1"
+                    className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1 text-[#a1a0a6]"
                     aria-hidden="true"
                   />
                 </div>
@@ -208,11 +208,11 @@ export default function Home() {
                   />
                 </div>
 
-                <h3 className="mt-6 max-w-xs font-heading text-2xl leading-tight tracking-[-0.04em]">
+                <h3 className="mt-6 max-w-xs font-heading text-2xl leading-tight tracking-[-0.04em] text-[#F1F0F4]">
                   {solution.title}
                 </h3>
 
-                <p className="mt-5 text-sm leading-relaxed text-[#595676]">
+                <p className="mt-5 text-sm leading-relaxed text-[#a1a0a6]">
                   {solution.description}
                 </p>
               </div>
@@ -220,20 +220,20 @@ export default function Home() {
           </div>
           <div
             id="industrias"
-            className="mt-20 flex scroll-mt-24 flex-col justify-between gap-7 border-t border-[#c5c4d4] pt-10 md:mt-35 md:flex-row md:items-end"
+            className="mt-20 flex scroll-mt-24 flex-col justify-between gap-7 border-t border-[#4a4954] pt-10 md:mt-35 md:flex-row md:items-end justify-center"
           >
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#595676]">
+              {/* <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#a1a0a6]">
                 Industrias
-              </p>
+              </p> */}
               <h2
-                className="mt-5 max-w-2xl font-heading text-4xl leading-none tracking-[-0.05em] sm:text-6xl"
+                className="mt-5 max-w-2xl font-heading text-4xl text-[#F1F0F4] leading-none tracking-[-0.05em] sm:text-6xl"
                 data-testid="home-solutions-title"
               >
                 Industrias que confian en nuestras soluciones.
               </h2>
               <p
-                className="mt-9 max-w-xl text-base leading-relaxed text-[#535357]"
+                className="mt-9 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
                 data-testid="servicios-page-intro"
               >
                 Trabajamos junto a diferentes sectores, adaptando nuestros servicios a sus necesidades específicas.
@@ -242,7 +242,7 @@ export default function Home() {
           </div>
           <ul
             aria-label="Industrias"
-            className="mt-12 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-8 md:grid-cols-4 md:gap-x-6 xl:grid-cols-7 xl:gap-x-5"
+            className="mt-12 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-8 md:grid-cols-4 md:gap-x-6 xl:grid-cols-6 xl:gap-x-5"
             data-testid="industries-list"
           >
             {industries.map(({ name, icon: Icon }, index) => (
@@ -260,7 +260,7 @@ export default function Home() {
                     aria-hidden="true"
                   />
                 </span>
-                <h5 className="mt-4 w-full max-w-[12rem] text-sm leading-snug text-[#3f3f45] font-semibold">
+                <h5 className="mt-4 w-full max-w-[12rem] text-sm leading-snug text-[#a1a0a6] font-semibold">
                   {name}
                 </h5>
               </li>

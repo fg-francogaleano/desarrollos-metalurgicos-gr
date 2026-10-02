@@ -40,16 +40,16 @@ export default function Nosotros() {
             className="mt-9 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
             data-testid="nosotros-page-intro"
           >
-            En desarrollo metalúrgicos GR nos consolidamos como un socio
+            En GR desarrollos metalúrgicos nos consolidamos como un socio
             estratégico para la industria nacional, especializándonos en la
             construcción e instalación de líneas de piping, bateas y estructuras
             de alta complejidad.
           </p>
           <p
-            className="mt-9 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
+            className="mt-5 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
             data-testid="nosotros-page-intro"
           >
-            Combinamos capacidad técnica equipamiento de precisión y una gestión
+            Combinamos capacidad técnica, equipamiento de precisión y una gestión
             en planta orientada a responder a las más altas exigencias
             normativas y operativas de nuestros clientes.
           </p>
@@ -205,25 +205,19 @@ export default function Nosotros() {
             className="mt-6 max-w-xl font-heading text-4xl leading-tight tracking-[-0.05em] sm:text-5xl"
             data-testid="nosotros-history-title"
           >
-            Experiencia principal en sistemas que mueven industrias.
+            Años de trayectoria respaldando procesos industriales.
           </h2>
           <p
             className="mt-7 max-w-xl text-base leading-relaxed text-[#c7c6cb]"
             data-testid="nosotros-history-copy"
           >
-            La empresa se especializa en la construcción e instalación de
-            sistemas de PIPING para la conducción de fluidos, trabajando con
-            acero inoxidable y acero al carbono para responder a las exigencias
-            de distintos procesos industriales.
+            A lo largo de nuestra trayectoria, nos hemos consolidado como una empresa especializada en la industria del PIPING, sistemas de bateas para industrias de procesos y montajes industriales. Trabajamos con aceros inoxidables y aceros al carbono para responder con máxima precisión a las exigencias de cada proyecto.
           </p>
           <p
             className="mt-5 max-w-xl text-base leading-relaxed text-[#a1a0a6]"
             data-testid="nosotros-complementary-copy"
           >
-            Acompañando esta especialización, desarrolla soluciones en
-            estructuras metálicas, incluyendo entrepisos y bateas de proceso,
-            integrando los distintos componentes requeridos para brindar
-            soluciones completas en cada proyecto.
+            ​Como empresa metalúrgica comprometida con la mejora continua, invertimos permanentemente en tecnología y equipamiento para asegurar ejecuciones en obra de máxima calidad, garantizando procesos ágiles y eficientes.
           </p>
         </motion.div>
         <div

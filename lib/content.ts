@@ -41,7 +41,7 @@ export const solutions: Solution[] = [
       "Servicios de soporte en estructuras metálicas, entrepisos y bateas de procesos, con soluciones integrales en los casos que se necesiten.",
     benefits: ["Soporte integral", "Diseño a medida", "Capacidad industrial"],
     applications: ["Plantas fabriles", "Constructoras", "Ingenierías"],
-    image: "https://res.cloudinary.com/dexm7t5ty/image/upload/v1790720402/Joel%20Ramirez/Estructura_metalica-servicio_wza9yx.jpg",
+    image: "https://res.cloudinary.com/dexm7t5ty/image/upload/v1790899189/Joel%20Ramirez/Estructuras_metalicas_industrias-servicio_vcet1f.jpg",
   },
   {
     number: "03",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     number: "P / 01",
     title: "Sistemas de tuberías para transporte de fluidos",
     description: "Soluciones de piping para diferentes tipos de industrias, con foco en precisión, orden y calidad de montaje.",
-    industry: "Plantas petroquímicas",
+    industry: "Recuperadora de solventes",
     technologies: ["Acero inoxidable"],
     image: media.piping,
   },
